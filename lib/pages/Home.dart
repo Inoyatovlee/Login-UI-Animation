@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 10),
             Expanded(
               child: Container(
                 decoration: const BoxDecoration(
@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
                   padding: EdgeInsets.all(20),
                   child: Column(
                     children: [
-                      SizedBox(height: 50),
+                      SizedBox(height: 60),
                       Container(
                         decoration: BoxDecoration(
                             color: Colors.white,
@@ -63,7 +63,7 @@ class _HomePageState extends State<HomePage> {
                             boxShadow: [
                               BoxShadow(
                                   color: Color.fromARGB(224, 215, 147, 128),
-                                  blurRadius: 20,
+                                  blurRadius: 10,
                                   offset: Offset(0, 10))
                             ]),
                         child: Column(
@@ -73,18 +73,18 @@ class _HomePageState extends State<HomePage> {
                           ],
                         ),
                       ),
-                      SizedBox(height: 40),
+                      SizedBox(height: 70),
                       Text(
                         "Forget Password?",
                         style: TextStyle(color: Colors.grey),
                       ),
-                      SizedBox(height: 40),
+                      SizedBox(height: 30),
                       Container(
                         margin: EdgeInsets.symmetric(horizontal: 50),
                         height: 50,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(50),
-                          color: Colors.orange,
+                          color: Color.fromARGB(255, 255, 150, 29),
                         ),
                         child: Center(
                           child: Text(
@@ -95,7 +95,19 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                       ),
-                      SizedBox(height: 40)
+                      SizedBox(height: 30),
+                      Text(
+                        "Continue with social media",
+                        style: TextStyle(color: Colors.grey),
+                      ),
+                      SizedBox(height: 30),
+                      Row(
+                        children: [
+                          Buttom(color: Colors.blue),
+                          SizedBox(height: 30),
+                          Buttom(color: Colors.black)
+                        ],
+                      ),
                     ],
                   ),
                 ),

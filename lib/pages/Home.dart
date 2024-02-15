@@ -1,4 +1,5 @@
 import 'package:login_ui_animation/import.dart';
+import 'package:login_ui_animation/pages/Animation/FadeAnimation.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -87,15 +88,13 @@ class _HomePageState extends State<HomePage> {
                           color: Color.fromARGB(255, 255, 150, 29),
                         ),
                         child: Center(
-                          child: Text(
-                            "Login",
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.w600),
-                          ),
+                          child: Text("Login",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w600)),
                         ),
                       ),
-                      SizedBox(height: 30),
+                      SizedBox(height: 50),
                       Text(
                         "Continue with social media",
                         style: TextStyle(color: Colors.grey),
@@ -103,9 +102,9 @@ class _HomePageState extends State<HomePage> {
                       SizedBox(height: 30),
                       Row(
                         children: [
-                          Buttom(color: Colors.blue),
-                          SizedBox(height: 30),
-                          Buttom(color: Colors.black)
+                          Buttom(color: Colors.blue, text: "Facebook"),
+                          const SizedBox(height: 30),
+                          Buttom(color: Colors.black, text: "Github")
                         ],
                       ),
                     ],
